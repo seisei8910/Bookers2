@@ -21,53 +21,53 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown" style>
-            <ul class="navbar-nav ml-auto list-unstyled">
+            <ul class="navbar-nav ml-auto">
               <% if user_signed_in? %>
                 <li>
-                  <%= link_to user_path(current_user.id), class: "nav-ling text-light mx-1" do %>
+                  <%= link_to user_path(current_user.id), class: "nav-link text-light mx-1" do %>
                     <i class="fas fa-home"></i>
                     Home
                   <% end %>
                 </li>
                 <li>
-                  <%= link_to users_path, class: "nav-ling text-light mx-1" do %>
+                  <%= link_to users_path, class: "nav-link text-light mx-1" do %>
                     <i class="fa-solid fa-users"></i>
                     Users
                   <% end %>
                 </li>
                 <li>
-                  <%= link_to books_path, class: "nav-ling text-light mx-1" do %>
+                  <%= link_to books_path, class: "nav-link text-light mx-1" do %>
                     <i class="fa-solid fa-book-open"></i>
                     Books
                   <% end %>
                 </li>
                 <li>
-                  <%= link_to destroy_user_session_path, method: :delete, class: "nav-ling text-light ml-1" do %>
+                  <%= link_to destroy_user_session_path, method: :delete, class: "nav-link text-light ml-1" do %>
                     <i class="fa-solid fa-sign-out-alt"></i>
                     Log out
                   <% end %>
                 </li>
               <% else %>
                 <li>
-                  <%= link_to "/", class: "nav-ling text-light mx-1" do %>
+                  <%= link_to "/", class: "nav-link text-light mx-1" do %>
                     <i class="fas fa-home"></i>
                     Home
                   <% end %>
                 </li>
                 <li>
-                  <%= link_to about_path, class: "nav-ling text-light mx-1" do %>
+                  <%= link_to about_path, class: "nav-link text-light mx-1" do %>
                     <i class="fa-solid fa-link"></i>
                     About
                   <% end %>
                 </li>
                 <li>
-                  <%= link_to new_user_registration_path, class: "nav-ling text-light mx-1" do %>
+                  <%= link_to new_user_registration_path, class: "nav-link text-light mx-1" do %>
                     <i class="fa-solid fa-user-plus"></i>
                     Sign up
                   <% end %>
                 </li>
                 <li>
-                  <%= link_to new_user_session_path, class: "nav-ling text-light ml-1" do %>
+                  <%= link_to new_user_session_path, class: "nav-link text-light ml-1" do %>
                     <i class="fa-solid fa-user-plus"></i>
                     Log in
                   <% end %>
